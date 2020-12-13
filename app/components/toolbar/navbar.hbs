@@ -1,0 +1,83 @@
+<div class="header activated">
+	<div class="header_inside">
+		<div class="head_logo">
+			<a href="https://global.visang.com"></a>
+			<LinkTo @route="index"><img src="mageone.png" alt="" class="toolbar-img"></LinkTo>
+		</div>
+		{{!-- <div class="head_gnb">
+			<ul class="clearfix">
+				<li><a href="https://global.visang.com/sub/category-all.php#pc_eng">English</a></li>
+				<li><a href="https://global.visang.com/sub/category-all.php#pc_math">Mathematics</a></li>
+				<li><a href="https://global.visang.com/sub/category-all.php#pc_lgg">Language</a></li>
+				<li><a href="https://global.visang.com/sub/category-all.php#pc_plf">Platform</a></li>
+			</ul>
+		</div> --}}
+		<div class="head_lnb">
+			<ul class="clearfix">
+				<li>
+					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank">
+						<img src="youtube.svg" alt="" class="nav-icon">
+					</a>
+				</li>
+				<li>
+					<LinkTo @route="index">
+					<img src="home-shape.svg" class="nav-icon">
+					</LinkTo>
+				</li>
+				<li>
+					<BsDropdown @tagName="span" as |dd|>
+					<dd.toggle class="lang">
+					EN
+					<span class="caret"></span>
+					</dd.toggle>
+					<dd.menu as |menu|>
+					<menu.item class="padding-0">
+						<menu.link-to @route="mm" class="lang m-0">MM</menu.link-to>
+					</menu.item>
+					</dd.menu>
+				</BsDropdown>
+				</li>
+				<li class="head_company">Company</li>
+			</ul>
+		</div>
+		<div class="head_mobile_btn" onclick="hamOn();">
+			<img src="https://global.visang.com/theme/basic/img/icon_mobile_btn.png" alt="">
+		</div>
+	</div>
+	<div class="header_dropdown" style="overflow: hidden; height: 0px;">
+		<div class="dropdown_depth_group clearfix">
+			<ul class="depth depth1">
+				<li><a href="https://global.visang.com/sub/elif.php">G1~G9 Interactive Learning</a></li>
+				<li><a href="https://global.visang.com/sub/englisheye.php">G1~G9 Self-paced Learning</a></li>
+				<li><a href="https://global.visang.com/sub/wings.php">Kinder Interactive Learning</a></li>
+				<li><a href="https://global.visang.com/sub/challenge.php">Kinder AR/MR Tech Learning</a></li>
+				<li><a href="https://global.visang.com/sub/action.php">Kinder MR Tech Learning</a></li>
+			</ul>
+			<ul class="depth depth2">
+				<li><a href="https://global.visang.com/sub/math_alive.php">K~G5 Interactive Learning with AI</a></li>
+			</ul>
+			<ul class="depth depth3">
+				<li><a href="https://global.visang.com/sub/klass.php">Korean Language Learning</a></li>
+			</ul>
+			<ul class="depth depth4">
+				<li><a href="https://global.visang.com/sub/allvia.php">Digital Learning Platform</a></li>
+				<li><a href="https://global.visang.com/sub/quizmonster.php">Educational Game</a></li>
+				<li class="depth_description">Request Collaboration</li>
+			</ul> 
+		</div>
+		<div class="dropdown_lnb_group">
+			<ul class="depth depth_language">
+				<li><a href="/cn">CN</a></li>
+				<li><a href="/es">ES</a></li>
+				<!--li><a href="/ko">KO</a></li-->
+			</ul>
+			<ul class="depth depth_company">
+				<li><a href="https://www.visang.com/pageLoad?page_id=/en/main" target="_blank">Who We Are</a></li>
+				<li><a href="https://global.visang.com/sub/business.php">Business Proposal</a></li>
+				<li><a href="https://global.visang.com/sub/global_news.php">Global News</a></li>
+				<li><a href="https://global.visang.com/sub/contact.php">Contact</a></li>
+				<li><a href="https://global.visang.com/bbs/board.php?bo_table=faq">FAQ</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
