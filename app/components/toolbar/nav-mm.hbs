@@ -1,22 +1,19 @@
-<div class="header activated">
+{{!-- <div class="header activated">
 	<div class="header_inside">
 		<div class="head_logo">
 			<a href="https://global.visang.com"></a>
-			<LinkTo @route="index"><img src="mageone.png" alt="" class="toolbar-img"></LinkTo>
+			<LinkTo @route="mm"><img src="imageone.png" alt="" class="toolbar-img"></LinkTo>
 		</div>
-		{{!-- <div class="head_gnb">
-			<ul class="clearfix">
-				<li><a href="https://global.visang.com/sub/category-all.php#pc_eng">English</a></li>
-				<li><a href="https://global.visang.com/sub/category-all.php#pc_math">Mathematics</a></li>
-				<li><a href="https://global.visang.com/sub/category-all.php#pc_lgg">Language</a></li>
-				<li><a href="https://global.visang.com/sub/category-all.php#pc_plf">Platform</a></li>
-			</ul>
-		</div> --}}
 		<div class="head_lnb">
 			<ul class="clearfix">
-				<li>
-					<a href="https://www.youtube.com/playlist?list=PLSBY4RcLQXoLXaow9Rjbfy2ZnTdguTDBL" target="_blank">
+			<li>
+					<a href="https://m.youtube.com/channel/UCEHmS40e4WrHMWKHLcF3f6A" target="_blank">
 						<img src="youtube.svg" alt="" class="nav-icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/WingsEnglishProgramMyanmar" target="_blank">
+						<img src="facebook.svg" alt="" class="nav-icon">
 					</a>
 				</li>
 				<li>
@@ -77,6 +74,48 @@
 				<li><a href="https://global.visang.com/sub/global_news.php">Global News</a></li>
 				<li><a href="https://global.visang.com/sub/contact.php">Contact</a></li>
 				<li><a href="https://global.visang.com/bbs/board.php?bo_table=faq">FAQ</a></li>
+			</ul>
+		</div>
+	</div>
+</div> --}}
+
+<div class="header activated">
+	<div class="header_inside">
+		<div class="head_logo">
+			<a href="https://global.visang.com"></a>
+			<LinkTo @route="index"><img src="imageone.png" alt="" class="toolbar-img"></LinkTo>
+		</div>
+		<div class="y-head_lnb">
+			<ul class="y-clearfix">
+				<li>
+					<a href="https://m.youtube.com/channel/UCEHmS40e4WrHMWKHLcF3f6A" target="_blank">
+						<img src="youtube.svg" alt="" class="nav-icon">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/WingsEnglishProgramMyanmar" target="_blank">
+						<img src="facebook.svg" alt="" class="nav-icon">
+					</a>
+				</li>
+				<li>
+					<LinkTo @route="mm">
+					<img src="home-shape.svg" class="nav-icon">
+					</LinkTo>
+				</li>
+				<li>
+					<BsDropdown @tagName="span" as |dd|>
+					<dd.toggle class="lang p-0">
+					MM
+					<span class="caret"></span>
+					</dd.toggle>
+					<dd.menu as |menu|>
+					<menu.item>
+						<menu.link-to @route="index" class="lang m-0">EN</menu.link-to>
+					</menu.item>
+					</dd.menu>
+				</BsDropdown>
+				</li>
+				<li class="head_company">Company</li>
 			</ul>
 		</div>
 	</div>

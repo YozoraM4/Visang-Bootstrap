@@ -2,11 +2,26 @@
 @import 'aos';
 
 $white: #ffffff;
+$smoke: #eeee;
 $black: #000000;
 $origin: #00b2e2;
-$orange: #ff9f73;
+$orange: #ed6e35;
 $indigo: #004a86;
-
+.tcs{
+	color: $smoke;
+}
+.tco{
+	color: $orange;
+}
+.fs-1{
+	font-size: 1rem;
+}
+.bl-1w{
+	border-left: 1px solid $white;
+}
+.bl-2o{
+	border-left: 2px solid $orange;
+}
 body {
     /*font-family: Helvetica,Tahoma;*/
   }
@@ -1047,7 +1062,7 @@ li {list-style:none;}
 .product_introduce_page .pip_content .pipc_img{margin-top:50px;}
 .product_introduce_page .pip_content .pipc_img_horizontal{margin-top:50px;overflow:hidden;}
 .product_introduce_page .pip_movie_brocher{overflow:hidden;padding-top:20px;}
-.product_introduce_page .pip_movie_brocher iframe{width:100%;height:100%;}
+.product_introduce_page .pip_movie_brocher iframe, video{width:100%;height:100%;}
 .product_introduce_page .pip_movie_brocher .movie{float:left;width:42%;margin:0 1% 0 7%;}
 .product_introduce_page .pip_movie_brocher .brocher{float:right;width:42%;margin:0 7% 0 1%;}
 .product_introduce_page .pip_movie_brocher .movie .box,
@@ -1466,6 +1481,7 @@ li {list-style:none;}
 	.header_inside .head_logo{top:20px;left:20px;width:110px;}
 	.header_inside .head_logo img{max-width:100%;}
 	.header_inside .head_mobile_btn{top:25px;right:20px;width:35px;}
+	.head_company{display: none;}
 	#sub_div {padding-top:70px;}
 
 	#product .product_contents .product_item{width:48%;margin-right:4%;}
@@ -1583,7 +1599,7 @@ th{
 .nav-icon{
 	background: #ff9f73;
     border-radius: 100%;
-    padding: 3px;
+    padding: 5px;
     width: 25px;
     height: 25px;
     max-width: 25px;
@@ -1596,4 +1612,38 @@ th{
 }
 .dropdown-menu{
 	padding: 0px;
+	min-width: fit-content;
+}
+.y-head_lnb{
+	position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1700;
+}
+.y-clearfix{
+	display: flex;
+	align-items: center;
+	li{
+		margin: 5px;
+	}
+}
+.head_company{
+	background:$orange;
+	color:#fff;
+	font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    padding: 0 25px;
+    border-radius: 50px 0 0 50px;
+    cursor: pointer;
+}
+.table-width{
+	width: 100%;
+    overflow-x: auto;
+}
+.ft_info li{
+	margin: 5px;
+}
+.o-hover:hover{
+	color: $orange;
 }
