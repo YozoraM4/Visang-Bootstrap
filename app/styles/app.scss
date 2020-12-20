@@ -1006,7 +1006,7 @@ li {list-style:none;}
 .subpage_titlebox.mathematics{background:url('../img/img_sub06-2.png') no-repeat center top;}
 .subpage_titlebox.language{background:url('../img/img_sub07-2.png') no-repeat center top;}
 .subpage_titlebox.news{background:url('../img/img_sub09.png') no-repeat center top;}
-.subpage_titlebox.business{background:url('../img/img_sub11.png') no-repeat center top;}
+.subpage_titlebox.business{background:url('/img_sub11.png') no-repeat center top;}
 .subpage_titlebox.contact{background:url('../img/img_sub12.png') no-repeat center top;}
 .subpage_titlebox.faq{background:url('../img/img_sub13.png') no-repeat center top;}
 .subpage_titlebox.privacy{background:url('/img_sub14.png') no-repeat center top;}
@@ -1597,7 +1597,7 @@ th{
     z-index: -10;
 }
 .nav-icon{
-	background: #ff9f73;
+	background:$orange;
     border-radius: 100%;
     padding: 5px;
     width: 25px;
@@ -1608,11 +1608,13 @@ th{
 .dropdown-item.active, .dropdown-item:active{
 	color: #fff;
     text-decoration: none;
-    background-color: #ff9f73;
+    background-color:$orange;
 }
 .dropdown-menu{
 	padding: 0px;
 	min-width: fit-content;
+	top: 0.5rem !important;
+	left: -1rem !important;
 }
 .y-head_lnb{
 	position: absolute;
