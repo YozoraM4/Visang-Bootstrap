@@ -1,5 +1,6 @@
 @import "ember-bootstrap/bootstrap";
 @import 'aos';
+@import 'response';
 
 $white: #ffffff;
 $smoke: #eeee;
@@ -253,10 +254,10 @@ body {
 
 @media screen and (max-width:480px){
 	#business_proposal .business_bigtext strong {display:block;}
-	#business_proposal .business_howto li {width:32%;}
-	#business_proposal .business_howto li .howto_circle {width:90px;height:90px;line-height:90px;margin-bottom:10px;}
+	#business_proposal .business_howto li {float: unset !important; width:32% !important;}
+	#business_proposal .business_howto li .howto_circle {width:90px !important;height:90px !important;line-height:90px !important;margin-bottom:10px !important;}
 	#business_proposal .business_howto li .howto_circle img {width:40px;}
-	#business_proposal .business_howto li .howto_text {font-size:12px;line-height:18px;}
+	#business_proposal .business_howto li .howto_text {font-size:12px !important;line-height:18px !important;}
 }
 
 @media screen and (max-width:420px){
@@ -1171,7 +1172,7 @@ li {list-style:none;}
 #business_proposal .business_howto li .howto_circle img{vertical-align:middle;}
 #business_proposal .business_howto li .howto_text{font-size:16px;line-height:16px;font-weight:700;transform:skew(-0.1deg);}
 #business_proposal .business_contact{width:100%;background:#f8f8f8;padding:65px 0;position:relative;cursor:pointer;}
-#business_proposal .business_contact .contact_btn{width:400px;margin:0 auto;overflow:hidden;}
+#business_proposal .business_contact .contact_btn{width:-webkit-fill-available;margin:0 auto;overflow:hidden;}
 #business_proposal .business_contact .contact_btn_left{float:left;width:38%;}
 #business_proposal .business_contact .contact_btn_right{float:right;width:60%;text-align:left;}
 #business_proposal .business_contact .contact_btn_right .cb_title{font-size:18px;line-height:18px;font-weight:700;margin-bottom:10px;}
@@ -1649,3 +1650,71 @@ th{
 .o-hover:hover{
 	color: $orange;
 }
+
+
+.modal {
+	background-color: rgba(0,0,0,0.4); /* Transparent dimmed overlay */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+  }
+  
+  .modal.hidden {
+	display: none;
+  }
+  
+  .modal .container {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   width: 200px;
+  }
+  
+  .modal .body {
+	box-shadow: 5px 10px #888888;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid black; 
+	padding: 10px;
+  }
+  .call-icon{
+	width: fit-content;
+    padding: 20px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    margin: 0 auto 2rem;
+  }
+
+  .icon-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 55px;
+	width: 55px;
+	color: #333;
+	background: #fff;
+	box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	transition: 250ms color;
+	-webkit-transition: 250ms color;
+	-moz-transition: 250ms color;
+	-ms-transition: 250ms color;
+	-o-transition: 250ms color;
+	animation-name: wave;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes wave {
+	0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+	100% {box-shadow: 0 0 0px 15px rgba(255, 255, 255, 0);}
+  }
