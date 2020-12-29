@@ -3,7 +3,9 @@
 @import 'response';
 @font-face {
 	font-family:'Pyidaungsu';
-	src:local('Pyidaungsu'), url('https://mmwebfonts.comquas.com/fonts/Pyidaungsu-2.1_Regular.woff') format('woff'), url('https://mmwebfonts.comquas.com/fonts/Pyidaungsu-2.1_Regular.ttf') format('ttf');
+	src:local('Pyidaungsu'), 
+	url('https://mmwebfonts.comquas.com/fonts/Pyidaungsu-2.1_Regular.woff') format('woff'),
+	url('https://mmwebfonts.comquas.com/fonts/Pyidaungsu-2.1_Regular.ttf') format('ttf');
 	}
 $white: #ffffff;
 $smoke: #eeee;
@@ -337,8 +339,8 @@ body {
 box-shadow: inset 1px 1px 2px #222542;
 }
 
-.pg_page {font-family:'pyidaungsu', 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';font-size:18px;line-height:20px;height:20px;width:auto;height:auto;padding:0;min-width:0;border:none;border-radius:0;margin-right:30px;background:none;color:#656565;}
-.pg_current {font-family:'pyidaungsu', 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';font-size:18px;line-height:20px;height:20px;width:auto;height:auto;padding:0;min-width:0;border:none;border-radius:0;margin-right:30px;background:none;color:$orange;font-weight:600;border:none;box-shadow:none;}
+.pg_page {font-family:'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';font-size:18px;line-height:20px;height:20px;width:auto;height:auto;padding:0;min-width:0;border:none;border-radius:0;margin-right:30px;background:none;color:#656565;}
+.pg_current {font-family:'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';font-size:18px;line-height:20px;height:20px;width:auto;height:auto;padding:0;min-width:0;border:none;border-radius:0;margin-right:30px;background:none;color:$orange;font-weight:600;border:none;box-shadow:none;}
 .pg_page:last-child {margin-right:0;}
 .pg_start {width:57px;height:20px;background:url(../img/icon_preview.png) no-repeat center center;}
 .pg_prev {width:57px;height:20px;background:url(../img/icon_preview.png) no-repeat center center;}
@@ -849,7 +851,7 @@ li {list-style:none;}
 .header_inside .head_lnb ul li{float:left;line-height:40px;padding:0 2px;}
 .header_inside .head_lnb ul li .head_icon_blue{display:none;}
 .header_inside .head_lnb ul li.head_language{font-size:18px;font-weight:700;margin:0 18px;padding-right:20px;color:#fff;background:url('../img/icon_arrow_1.png') no-repeat right center;cursor:pointer;}
-.header_inside .head_lnb ul li.head_company{font-size:20px;font-weight:700;height:40px;padding:0 25px;border-radius:50px 0 0 50px;color:#000;background:#fff;cursor:pointer;}
+.header_inside .head_lnb ul li.head_company{font-size:20px;font-weight:700;height:40px;padding:5px 25px;border-radius:50px 0 0 50px;color:#000;background:#fff;cursor:pointer;}
 .header_inside .head_mobile_btn{display:none;cursor:pointer;}
 .header.activated .header_inside{background:#fff;border-bottom:1px solid #dedede;}
 .header.activated .head_gnb ul li a{color:#000;text-decoration: none;}
@@ -1644,7 +1646,7 @@ th{
 	font-size: 20px;
     font-weight: 700;
     height: 40px;
-    padding: 0 25px;
+    padding: 5px 25px;
     border-radius: 50px 0 0 50px;
     cursor: pointer;
 }
