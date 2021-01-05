@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('privacy');
   this.route('mm');
   this.route('proposal');
+  this.route('privacy-policy');
 });
